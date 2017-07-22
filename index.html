@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thomas Lochner</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="/home/thomas/Documents/Projects/Portfolio Site/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".left").click(function(){
+        $(".left-dropdown").toggle(500);
+      });
+    });
+
+    $(document).ready(function(){
+      $(".right").click(function(){
+        $(".right-dropdown").toggle(500);
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <!-- Navigation bar -->
+      <nav id="nav">
+        <ul id="nav_menu">
+          <!-- Home button -->
+          <li id="home" class="grow">
+            <a title="Home Page" href="portfolio.html">Home</a>
+          </li>
+          <!-- Resume button -->
+          <li id="resume" class="grow">
+            <a title="Thomas Lochner's Resume" href="html_css_resume/thomas_lochner_resume.html">Resume</a>
+          </li>
+          <!-- Letters of recommendation button -->
+          <li id="letters_of_recommendation" class="grow">
+            <a title="Thomas Lochner's Letters of Recommendation" href="">Letters of Recommendation
+              <div id="letters_dropdown">
+              </div>
+            </a>
+          </li>
+          <!-- About button -->
+          <li id="about" class="grow">
+            <a title="About Thomas Lochner" href="">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main focus of home page -->
+    <div id="main">
+      <div id="main_center">
+        <h1>Thomas Lochner</h1>
+        <h2>A <div class="grow" style="display:inline-block;">growing</div> & developing developer.</h2>
+        <!-- Contact button -->
+        <form action="mailto:tloch1995@gmail.com">
+          <button id="contact_button" alt="Contact Thomas Lochner" title="Contact Thomas Lochner">Contact Thomas</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer of the page -->
+    <footer id="footer">
+      <!-- Left arrow in footer -->
+      <div class="left" alt="Left Dropdown Button">
+        <!-- Dropdown menu for left arrow -->
+        <div class="left-dropdown" alt="Left Dropdown Menu">
+          <a href="https://twitter.com/tloch95" alt="Thomas Lochner's Twitter" title="Thomas Lochner's Twitter">
+            <i class="fa fa-twitter-square" style="font-size:48px;color:#0084b4">
+            </i>
+          </a>
+        </div>
+      </div>
+      <!-- Picture of me -->
+      <img class="self_picture" src="Thomas Lochner.png" alt="Thomas Lochner's Image" title="Thomas Lochner's Image" href=""></img>
+      <!-- Right arrow in footer -->
+      <div class="right" alt="Right Dropdown Button">
+        <!-- Dropdown menu for right arrow -->
+        <div class="right-dropdown" alt="Right Dropdown Menu">
+          <a href="https://linkedin.com/in/tlochner95" alt="Thomas Lochner's LinkedIn" title="Thomas Lochner's LinkedIn">
+            <img src="linkedin-logo.png" style="height:40px;width:40px;margin-left:30px;margin-top:30px;">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
