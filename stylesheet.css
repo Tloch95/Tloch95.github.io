@@ -15,8 +15,13 @@ header {
 /* Styling for nav bar */
 nav {
   float: right;
-  margin-right: 50px;
-  margin-top: 90px;
+  width: 30%;
+  height: 100%;
+}
+
+#nav_menu {
+  height: 50%;
+  margin-top: 40px;
 }
 
 nav a {
@@ -35,9 +40,16 @@ nav a:hover {
 }
 
 nav li {
+  margin-top: 50%;
   list-style-type: none;
   display: inline-block;
   padding: 15px;
+  position: absolute;
+  right: 150px;
+}
+
+#letters_of_recommendation {
+
 }
 
 /* Dropdown for letters of recommendation */
@@ -48,7 +60,7 @@ nav li {
   width: 150px;
   height: 250px;
   padding: 10px;
-  
+
   box-shadow: 10px 10px 5px #888888;
 }
 
