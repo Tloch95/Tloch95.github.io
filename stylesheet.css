@@ -47,9 +47,9 @@ nav li {
   border-radius: 5px;
   width: 150px;
   height: 250px;
-  margin-bottom: ;
+  padding: 10px;
+  
   box-shadow: 10px 10px 5px #888888;
-  z-index: 2;
 }
 
 /* Display letters of recommendation dropdown on active */
@@ -183,8 +183,8 @@ nav li {
 }
 
 /* Display right dropdown on active */
-.right:active .right-dropdown {
-  display: block;
+/.right:active .right-dropdown {
+  display: inline-block;
 }
 
 /* Dropdown for left arrow */
