@@ -1,0 +1,276 @@
+html, body {
+  margin: 0;
+}
+
+/* Styling for header */
+header {
+  background-color: #72a0ea;
+  display: inline-block;
+  height: 250px;
+  width: 100%;
+  margin: 0px;
+  position: static;
+}
+
+/* Styling for nav bar */
+nav {
+  float: right;
+  width: 35%;
+  height: 100%;
+}
+
+#nav_menu {
+  height: 50px;
+  padding-right: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  height: 100%;
+}
+
+/* Underline text in button on hover */
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+#letters_of_recommendation {
+
+}
+
+/* Dropdown for letters of recommendation */
+#letters_dropdown {
+  display: none;
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  width: 50%;
+  height: 150px;
+  padding: 10px;
+  background-color: #93b5ed;
+  box-shadow: 10px 10px 5px #888888;
+  position: absolute;
+  margin-top: 5px;
+}
+
+/* Display letters of recommendation dropdown on active */
+#letters_of_recommendation:hover #letters_dropdown {
+  display: block;
+}
+
+/* Styling for main div of page (center/middle div) */
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: #72a0ea;
+  display: inline-block;
+  top: 125px;
+}
+
+/* Styling for main focus of the page */
+#main_center {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main_center h1 {
+  font-size: 50px;
+  margin: 0px;
+}
+
+#main_center h2 {
+  font-size: 30px;
+  margin: 0px;
+}
+
+/* Styling for contact button */
+#contact_button {
+  border-radius: 5px;
+  font-size: 14px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  display: block;
+  position: relative;
+  left: 47%;
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #72a0ea;
+  border-width: 0px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 3px #27496d;
+}
+
+/* Make shadow and button press on hover of contact button */
+#contact_button:hover, #contact_button:active {
+  box-shadow: 0 2px #27496d;
+  transform: translateY(1px);
+}
+
+#footer {
+  background-color: #999999;
+  width: 100%;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  top: 318px;
+}
+
+/* Left arrow in footer */
+.left {
+  display: inline-block;
+  background-image: url("black-arrow-left.png");
+  width: 55px;
+  height: 52px;
+  margin-top: 108px;
+  margin-left: 800px;
+  position: absolute;
+}
+
+/* Make left arrow in footer white on hover */
+.left:hover {
+  background-image: url("white-arrow-left.png");
+  width: 55px;
+  height: 52px;
+}
+
+/* Picture of me in footer */
+.self_picture {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  top: 43px;
+  left: 867px;
+  border-radius: 20px;
+}
+
+
+/* Right arrow in footer */
+.right {
+  display: inline-block;
+  background-image: url("black-arrow-right.png");
+  width: 55px;
+  height: 52px;
+  margin-top: 110px;
+  margin-left: 987px;
+  position: absolute;
+}
+/* Make right arrow in footer white on hover */
+.right:hover {
+  background-image: url("white-arrow-right.png");
+  width: 55px;
+  height: 52px;
+}
+
+/* Dropdown for right arrow */
+.right-dropdown {
+  display: none;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 500px;
+  height: 100px;
+  margin-left: 100px;
+  margin-top: -30px;
+  box-shadow: 10px 10px 5px #888888;
+  z-index: 1;
+}
+
+/* Display right dropdown on active */
+/.right:active .right-dropdown {
+  display: inline-block;
+}
+
+/* Dropdown for left arrow */
+.left-dropdown {
+  display: none;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 500px;
+  height: 100px;
+  margin-left: -555px;
+  margin-top: -30px;
+  box-shadow: 10px 10px 5px #888888;
+  z-index: 1;
+}
+
+/* Display left dropdown on active */
+/.left:active .left-dropdown {
+  display: block;
+}
+
+#footer i {
+  line-height: 5px;
+  margin-left: 30px;
+  margin-top: 49px;
+}
+
+/* Make text grow */
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+/* Make text grow on hover */
+.grow:hover {
+  transform: scale(1.2);
+}
+
+ /* The "shine" element */
+
+.shine:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect for shine*/
+
+.shine:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state for shine*/
+
+.shine:active:after {
+  opacity: 0;
+}
