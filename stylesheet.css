@@ -274,3 +274,29 @@ nav li {
 .shine:active:after {
   opacity: 0;
 }
+
+/* -------------------------------------------------------------------------- */
+
+/* CSS for about page */
+
+#main_about {
+  font-family: 'Open Sans', sans-serif;
+  color: #72a0ea;
+}
+
+#main_about p, #main_about ul {
+  color: #000000;
+}
+
+#main_about p, #main_about ul, #main_about h1 {
+  margin-left: 5%;
+}
+
+#main_about img {
+  display: inline-block;
+  margin: 1%;
+}
+
+#images {
+  text-align: center;
+}

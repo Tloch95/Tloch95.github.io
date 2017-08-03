@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Thomas Lochner</title>
+    <title>About Thomas Lochner</title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $(".left").click(function(){
-        $(".left-dropdown").toggle(500);
-      });
-    });
-
-    $(document).ready(function(){
-      $(".right").click(function(){
-        $(".right-dropdown").toggle(500);
-      });
-    });
-    </script>
   </head>
   <body>
-    <!-- Header -->
     <header id="header">
       <!-- Navigation bar -->
       <nav id="nav">
@@ -45,18 +29,42 @@
           </li>
           <!-- About button -->
           <li id="about" class="grow">
-            <a title="About Thomas Lochner" href="about.html">About</a>
+            <a title="About Thomas Lochner" href="">About</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!-- Main focus of home page -->
-    <div id="main">
-      <div id="main_center">
-        <h1>Thomas Lochner</h1>
-        <h2>A <div class="grow" style="display:inline-block;">growing</div> & developing developer.</h2>
-        <!-- Contact button -->
+    <!-- Main focus of about page -->
+    <div id="main_about">
+      <div id="main_center_about">
+        <h1>About Thomas Lochner</h1>
+        <p> As a beginner developer, I've come to realize that it is a competitive world and that in order to be successful, I must
+        do more than the bare minimum. That has not been a problem, as I am a very motivated person with a drive to do my best in everything
+        that I do, especially the things that I have a passion for, such as developing. Along with this, I've come to realize the importance
+        of detail and responsiveness. I am great at using the skills I have at hand, and even better at using my skill to solve issues past
+        my skillset. My skillset includes:</p>
+        <ul>
+          <li>Java</li>
+          <li>Javascript</li>
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Git/Github</li>
+        </ul>
+        <p>I am currently a junior attending the University of Arizona for my bachelor's degree in Computer Science. I consistently
+        use the free time that I have to better my web development/tech skillset. If you are interested in finding out more about
+        what I have to offer and how I can be a valuable asset to your team, feel free to contact me using the contact button below.</p>
+
+        <div id="images">
+          <img src="html_css_resume/Java.png" alt="Java" height="150" width="150"></img>
+          <img src="html_css_resume/html5.png" alt="HTML5" height="150" width="150"></img>
+          <img src="html_css_resume/CSS3.png" alt="CSS3" height="150" width="150"></img>
+          <img src="html_css_resume/csharp.png" alt="C#" height="150" width="150"></img>
+        </div>
+
         <form action="mailto:tloch1995@gmail.com">
           <button id="contact_button" alt="Contact Thomas Lochner" title="Contact Thomas Lochner">Contact Thomas</button>
         </form>
