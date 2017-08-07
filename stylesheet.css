@@ -1,12 +1,14 @@
 html, body {
   margin: 0;
+  position: relative;
+  height: 100vh;
 }
 
 /* Styling for header */
 header {
   background-color: #72a0ea;
   display: inline-block;
-  height: 250px;
+  height: 25vh;
   width: 100%;
   margin: 0px;
   position: static;
@@ -15,15 +17,15 @@ header {
 /* Styling for nav bar */
 nav {
   float: right;
-  width: 35%;
+  width: 40%;
   height: 100%;
 }
 
 #nav_menu {
-  height: 50px;
-  padding-right: 20px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 0;
+  height: 100%;
+  padding-left: 0px;
+  margin-top: 10.5vh;
 }
 
 nav a {
@@ -49,8 +51,12 @@ nav li {
   text-align: center;
 }
 
-#letters_of_recommendation {
+#about {
+  z-index: 0;
+}
 
+#letters_of_recommendation {
+  z-index: 1;
 }
 
 /* Dropdown for letters of recommendation */
@@ -59,7 +65,7 @@ nav li {
   border: 2px solid #cecece;
   border-radius: 5px;
   width: 50%;
-  height: 150px;
+  height: auto;
   padding: 10px;
   background-color: #93b5ed;
   box-shadow: 10px 10px 5px #888888;
@@ -75,12 +81,12 @@ nav li {
 /* Styling for main div of page (center/middle div) */
 #main {
   position: relative;
-  height: 100%;
+  height: 50vh;
   width: 100%;
   background-color: white;
   color: #72a0ea;
   display: inline-block;
-  top: 125px;
+  /* top: 125px; */
 }
 
 /* Styling for main focus of the page */
@@ -88,8 +94,7 @@ nav li {
   display: inline-block;
   margin: 0;
   width: 100%;
-  height: 10px;
-  margin-top: 10px;
+  height: 50vh;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -97,6 +102,7 @@ nav li {
 #main_center h1 {
   font-size: 50px;
   margin: 0px;
+  margin-top: 18vh;
 }
 
 #main_center h2 {
@@ -113,7 +119,7 @@ nav li {
   text-align: center;
   display: block;
   position: relative;
-  left: 47%;
+  left: calc(50% - 50px);
   margin-top: 15px;
   font-family: 'Open Sans', sans-serif;
   background-color: #72a0ea;
@@ -132,10 +138,19 @@ nav li {
 #footer {
   background-color: #999999;
   width: 100%;
-  height: 250px;
+  height: 25vh;
   display: inline-block;
   position: relative;
-  top: 318px;
+  /* top: 318px; */
+}
+
+#footer_center {
+  display: block;
+  position: relative;
+  width: 30%;
+  height: 100%;
+  left: 35%;
+  text-align: center;
 }
 
 /* Left arrow in footer */
@@ -144,9 +159,9 @@ nav li {
   background-image: url("black-arrow-left.png");
   width: 55px;
   height: 52px;
-  margin-top: 108px;
-  margin-left: 800px;
+  margin-top: 10vh;
   position: absolute;
+  left: 0;
 }
 
 /* Make left arrow in footer white on hover */
@@ -158,12 +173,14 @@ nav li {
 
 /* Picture of me in footer */
 .self_picture {
+  max-height: 15vh;
+  min-height: 13vh;
+  max-width: 10vh;
+  min-width: 8vh;
   display: inline-block;
-  position: absolute;
-  margin: 0;
-  top: 43px;
-  left: 867px;
+  margin: 0 auto;
   border-radius: 20px;
+  margin-top: 5vh;
 }
 
 
@@ -173,9 +190,9 @@ nav li {
   background-image: url("black-arrow-right.png");
   width: 55px;
   height: 52px;
-  margin-top: 110px;
-  margin-left: 987px;
   position: absolute;
+  right: 0;
+  margin-top: 10vh;
 }
 /* Make right arrow in footer white on hover */
 .right:hover {
@@ -189,9 +206,9 @@ nav li {
   display: none;
   border: 3px solid white;
   border-radius: 5px;
-  width: 500px;
+  width: 200px;
   height: 100px;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-top: -30px;
   box-shadow: 10px 10px 5px #888888;
   z-index: 1;
@@ -207,9 +224,9 @@ nav li {
   display: none;
   border: 3px solid white;
   border-radius: 5px;
-  width: 500px;
+  width: 200px;
   height: 100px;
-  margin-left: -555px;
+  margin-left: -225px;
   margin-top: -30px;
   box-shadow: 10px 10px 5px #888888;
   z-index: 1;
@@ -280,8 +297,10 @@ nav li {
 /* CSS for about page */
 
 #main_about {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
   color: #72a0ea;
+  height: auto;
 }
 
 #main_about p, #main_about ul {
@@ -299,4 +318,30 @@ nav li {
 
 #images {
   text-align: center;
+}
+
+/* Styling for contact button */
+#contact_button_about {
+  border-radius: 5px;
+  font-size: 14px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  display: block;
+  position: relative;
+  left: calc(50% - 50px);
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #72a0ea;
+  border-width: 0px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 3px #27496d;
+  margin-bottom: 5vh;
+}
+
+/* Make shadow and button press on hover of contact button */
+#contact_button_about:hover, #contact_button_about:active {
+  box-shadow: 0 2px #27496d;
+  transform: translateY(1px);
 }
