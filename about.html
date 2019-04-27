@@ -5,6 +5,9 @@
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
     $(document).ready(function(){
@@ -51,39 +54,63 @@
     </header>
 
     <!-- Main focus of about page -->
-    <div id="main_about">
-      <div id="main_center_about">
-        <h1>About Thomas Lochner</h1>
-        <p> As a beginner developer, I've come to realize that it is a competitive world and that in order to be successful, I must
-        do more than the bare minimum. That has not been a problem, as I am a very motivated person with a drive to do my best in everything
-        that I do, especially the things that I have a passion for, such as developing. Along with this, I've come to realize the importance
-        of detail and responsiveness. I am great at using the skills I have at hand, and even better at using my skill to solve issues past
-        my skillset. My skillset includes:</p>
-        <ul>
-          <li>Java</li>
-          <li>Javascript</li>
-          <li>C</li>
-          <li>C#</li>
-          <li>C++</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Git/Github</li>
-        </ul>
-        <p>I am currently a junior attending the University of Arizona for my bachelor's degree in Computer Science. I consistently
-        use the free time that I have to better my web development/tech skillset. If you are interested in finding out more about
-        what I have to offer and how I can be a valuable asset to your team, feel free to contact me using the contact button below.</p>
-
-        <div id="images">
-          <img src="Java.png" alt="Java" height="150" width="150"></img>
-          <img src="html5.png" alt="HTML5" height="150" width="150"></img>
-          <img src="CSS3.png" alt="CSS3" height="150" width="150"></img>
-          <img src="csharp.png" alt="C#" height="150" width="150"></img>
+    <div id="main_about" class="col-md-12">
+      <div id="main_center_about" class="col-md-12">
+        <h1>About Me</h1>
+        <p>
+           My name is Thomas Lochner. I'm a 24-year-old web developer with a love for technology/coding. I was born and raised in Tucson, AZ and still currently live in Tucson, AZ.
+           My first introduction to coding was when I was 11 years old. My cousin introduced me to a classic game video game (which I still play today) called Ultima Online. I later discovered that the game files
+           to create your own server were openly available to anyone, so I downloaded them, and my interest peeked. Ever since then, I've enjoyed coding, along with most other technology. My mother and father 
+           had a hand in these interests as well, with my mother being in the I.T. field at the University of Arizona, and my father buying/reselling laptops in the early 2000's. My father would bring home 
+           loads of laptops from his auctions and would have me help him load a fresh copy of Windows 95 on to each one of them at a very young age.
+        </p>
+        <p>
+          Later on in life, I continued to enjoy coding and technology, but was not sure if it was what I wanted to do for a career. I have always thoroughly enjoyed automotive work as well, so I naturally was 
+          considering that as well. However, after a few decision changes, I settled on going to school for Computer Science. As you can tell, I am now pursuing a career in Computer Science, and am very happy 
+          with the decision I made. 
+        </p>
+        <p>
+          As for what I have made of my decisions... I have acquired a reasonably broad skillset thus far (with more to come!) My current skillset includes (but is not concluded by):
+        </p>
+        <div class="col-md-12">
+          <div class="col-md-6">
+              <ul>
+                <li>Java</li>
+                <li>Javascript/jQuery</li>
+                <li>C</li>
+                <li>C#</li>
+                <li>Entity Framework</li>
+                <li>Python (beginner)</li>
+                <li>Bash</li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+              <li>Git/Github</li>
+              <li>ASP.NET MVC</li>
+              <li>Windows/Unix/OS X</li>
+              <li>Azure</li>
+            </ul>
+          </div>
         </div>
-
-        <form action="mailto:tloch1995@gmail.com">
-          <button id="contact_button_about" alt="Contact Thomas Lochner" title="Contact Thomas Lochner">Contact Thomas</button>
-        </form>
+        <p>As for my schooling, I am currently a senior attending the University of Arizona for my bachelor's degree in Computer Science. I will be graduating in the Fall of 2019. I like to
+        use the free time that I have to better my web development/tech skillset. If you are interested in finding out more about what I have to offer and how I can be a valuable asset to your 
+        team, feel free to contact me using the contact button below!</p>
       </div>
+
+      <div id="images">
+        <img src="Java.png" alt="Java" height="150" width="150"></img>
+        <img src="html5.png" alt="HTML5" height="150" width="150"></img>
+        <img src="CSS3.png" alt="CSS3" height="150" width="150"></img>
+        <img src="csharp.png" alt="C#" height="150" width="150"></img>
+      </div>
+
+      <form action="mailto:tloch1995@gmail.com">
+        <button id="contact_button_about" alt="Contact Thomas Lochner" title="Contact Thomas Lochner">Contact Thomas</button>
+      </form>
     </div>
 
     <!-- Footer of the page -->
@@ -100,7 +127,7 @@
           </div>
         </div>
         <!-- Picture of me -->
-        <img class="self_picture" src="Thomas Lochner.png" alt="Thomas Lochner's Image" title="Thomas Lochner's Image" href=""></img>
+        <img class="self_picture" src="Thomas Lochner.jpg" alt="Thomas Lochner's Image" title="Thomas Lochner's Image" href=""></img>
         <!-- Right arrow in footer -->
         <div class="right" alt="Right Dropdown Button">
           <!-- Dropdown menu for right arrow -->

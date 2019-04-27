@@ -307,10 +307,6 @@ nav li {
   color: #000000;
 }
 
-#main_about p, #main_about ul, #main_about h1 {
-  margin-left: 5%;
-}
-
 #main_about img {
   display: inline-block;
   margin: 1%;
