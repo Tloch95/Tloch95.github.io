@@ -1,0 +1,34 @@
+#header{
+  background: $light-grey;
+  min-height: $header-height;
+  height: $header-height;
+  width: 100vw;
+  max-width:100%;
+
+  #header-list {
+    display: table;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+
+    li {
+      display: table-cell;
+      list-style-type: none;
+      font-size: $header-tab-font-size;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $white;
+      padding: $header-tab-padding;
+    }
+
+    a:hover {
+      background-color: $dark-grey;
+    }
+  }
+}

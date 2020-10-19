@@ -1,0 +1,25 @@
+#hero {
+  height: calc(100vh - #{$header-height});
+
+  #hero-hello {
+    font-size: $hero-hello-font-size;
+    color: $green;
+    text-align: left;
+  }
+
+  #hero-greeting, #subtitle {
+    font-size: $hero-greeting-font-size;
+    color: $green;
+    text-align: left;
+
+    #hero-name {
+      font-size: $hero-name-font-size;
+      text-align: left;
+      color: $blue;
+    }
+  }
+
+  #hero-container {
+    display: table;
+  }
+}
