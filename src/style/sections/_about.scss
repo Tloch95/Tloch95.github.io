@@ -1,4 +1,45 @@
 #about {
   height: 100vh;
-  max-height: 100vh;
+  padding: 5vh 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: fit-content(100%) fit-content(400px);
+    grid-template-rows: fit-content(100%) fit-content(100%);
+    justify-content: center;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vh;
+
+    .about-header {
+      grid-column: span 2;
+      height: 100%;
+    }
+
+    .img-wrapper {
+      height: 100%;
+      min-width: 400px;
+    }
+  
+    #para-container {
+      height: 100%;
+      text-align: center;
+      font-size: $default-font-size;
+      max-width: 550px;
+
+      #para-1 {
+        color: $orange;
+      }
+      
+      #para-2 {
+        color: $purple;
+      }
+  
+      #para-3 {
+        color: $blue;
+      }
+    }
+  }
 }
