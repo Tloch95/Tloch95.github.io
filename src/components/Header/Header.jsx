@@ -19,7 +19,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="#about">
               <FontAwesomeIcon icon={faInfoCircle} />{" "}
                 About
             </Link>
