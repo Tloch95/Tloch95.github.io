@@ -11,6 +11,7 @@
     justify-content: center;
     grid-column-gap: 1vw;
     grid-row-gap: 1vh;
+    margin: 0 2vw;
 
     .about-header {
       grid-column: span 2;
@@ -25,7 +26,7 @@
     #para-container {
       height: 100%;
       text-align: center;
-      font-size: $default-font-size;
+      font-size: $fz-md;
       max-width: 550px;
 
       #para-1 {

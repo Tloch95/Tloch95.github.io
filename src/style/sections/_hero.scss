@@ -1,5 +1,5 @@
 #hero {
-  height: calc(100vh - #{$header-height});
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,23 +10,41 @@
     grid-template-columns: auto;
     justify-content: center;
     row-gap: 2vh;
+
+    #hero-btn {
+      justify-items: center;
+    }
   }
 
   #hero-hello {
-    font-size: $hero-hello-font-size;
+    font-size: clamp(20px, 5.5vw, 40px);
     color: $green;
     text-align: left;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
   }
 
   #hero-greeting, #subtitle {
-    font-size: $hero-greeting-font-size;
+    font-size: clamp(20px, 5.5vw, 40px);
     color: $green;
     text-align: left;
 
+    @include respond(tab-port) {
+      text-align: center;
+    }
+
     #hero-name {
-      font-size: $hero-name-font-size;
-      text-align: left;
+      font-size: clamp(30px, 8.5vw, 60px);
       color: $blue;
+    }
+  }
+
+  #hero-btn {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
     }
   }
 }

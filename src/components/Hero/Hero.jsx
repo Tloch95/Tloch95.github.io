@@ -9,11 +9,10 @@ function Hero() {
 
   return (
     <section id="hero" className="section">
-      <div class="grid-container">
+      <div className="grid-container">
         <Typing cursor={<Cursor></Cursor>}>
           <div id="hero-hello">
             {title || 'Hello :)'}
-            <br/>
           </div>
           <div id="hero-greeting">
             My name is {' '}
@@ -27,7 +26,9 @@ function Hero() {
           </div>
         </Typing>
         {/* Button courtesy - https://github.com/r1/cssbuttons */}
-        <a class="bn39" href="#about"><span class="bn39span">{heroBtn || "Learn more"}</span></a>
+        <div id="hero-btn">
+          <a className="bn39" href="#about"><span className="bn39span">{heroBtn || "Learn more"}</span></a>
+        </div>
       </div>
     </section>
   )

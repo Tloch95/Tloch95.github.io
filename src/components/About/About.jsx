@@ -3,7 +3,7 @@ import PortfolioContext from '../../context/context';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle, faBriefcase, faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 function About() {
   const data = useStaticQuery(graphql`
@@ -18,12 +18,12 @@ function About() {
     }
   `);
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree,resume } = about;
+  const { paragraphOne, paragraphTwo, paragraphThree } = about;
 
   return (
     <section id="about" className="section">
-      <div class="grid-container">
-        <div class="section-header about-header">
+      <div className="grid-container">
+        <div className="section-header about-header">
           <FontAwesomeIcon icon={faInfoCircle} />{" "}
           About
         </div>
@@ -32,7 +32,7 @@ function About() {
           <p id="para-2" className="about-paragraph">{paragraphTwo}</p>
           <p id="para-3" className="about-paragraph">{paragraphThree}</p>
         </div>
-        <div class="img-wrapper">
+        <div className="img-wrapper">
           <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" style={{maxHeight: "100%", maxWidth: "400px"}}/>
         </div>
       </div>

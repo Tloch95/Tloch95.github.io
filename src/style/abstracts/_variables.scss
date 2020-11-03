@@ -16,16 +16,20 @@ $orange: #db8467;
 $purple: #bb94d6;
 
 // FONT SIZE
-$default-font-size: 1rem;
-$big-font-size: 4rem;
-$mid-font-size: 2.5rem;
+$fz-xxs: 12px;
+$fz-xs: 13px;
+$fz-sm: 14px;
+$fz-md: 16px;
+$fz-lg: 18px;
+$fz-xl: 20px;
+$fz-xxl: 22px;
+$fz-heading: 32px;
 
 // HEADER
 $header-tab-font-size: 20px;
-$header-tab-padding: 6px;
 $header-height: 35px;
 
 // HERO
-$hero-hello-font-size: 35px;
-$hero-greeting-font-size: 25px;
-$hero-name-font-size: 45px;
+$hero-hello-font-size: 3rem;
+$hero-greeting-font-size: 2rem;
+$hero-name-font-size: 3.5rem;

@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useContext } from "react"
-import { Container } from 'react-bootstrap';
+import React, { useContext } from "react";
 import PortfolioContext from '../../context/context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle, faBriefcase, faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -11,39 +10,27 @@ function Header() {
   const { title } = head;
   return (
     <header id="header">
-      <Container fluid>
-        <ul id="header-list">
-          <li>
-            <Link to="/">
-              {title}
-            </Link>
-          </li>
-          <li>
-            <Link to="#about">
-              <FontAwesomeIcon icon={faInfoCircle} />{" "}
-                About
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faBriefcase} />{" "}
-                Experience
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faCodeBranch} />{" "}
-                Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
-                Contact
-            </Link>
-          </li>
-        </ul>
-      </Container>
+      <div class="flex-container">
+        <Link to="/">
+          <span>{title}</span>
+        </Link>
+        <Link to="#about">
+          <FontAwesomeIcon icon={faInfoCircle} />{" "}
+          <span>About</span>
+        </Link>
+        <Link to="/">
+          <FontAwesomeIcon icon={faBriefcase} />{" "}
+          <span>Experience</span>
+        </Link>
+        <Link to="/">
+          <FontAwesomeIcon icon={faCodeBranch} />{" "}
+          <span>Projects</span>
+        </Link>
+        <Link to="/">
+          <FontAwesomeIcon icon={faEnvelope} />{" "}
+          <span>Contact</span>
+        </Link>
+      </div>
     </header>
   );
 }

@@ -1,13 +1,20 @@
-#header {
+import styled from 'styled-components';
+
+export const StyledMenu = styled.nav`
   background: $light-grey;
-  min-height: $header-height;
-  height: $header-height;
-  width: 100vw;
-  max-width:100%;
+  height: 100vh;
+  width: 80vw;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  position: fixed;
+  transform: ${({ showMenu }) => showMenu ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.3s ease-in-out;
 
   .flex-container {
     display: flex;
     height: 100%;
+    flex-direction: column;
 
     a {
       text-decoration: none;
@@ -28,4 +35,4 @@
       background-color: $dark-grey;
     }
   }
-}
+`
