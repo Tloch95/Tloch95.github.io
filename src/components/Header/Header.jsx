@@ -10,7 +10,7 @@ function Header() {
   const { title } = head;
   return (
     <header id="header">
-      <div class="flex-container">
+      <div className="flex-container">
         <Link to="/">
           <span>{title}</span>
         </Link>
