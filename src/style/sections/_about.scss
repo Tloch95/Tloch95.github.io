@@ -37,6 +37,10 @@
       display: block;
       position: relative;
       width: 100%;
+      
+      @include respond(tab-port-min) {
+        min-width: 300px;
+      }
 
       .img {
         position: relative;
@@ -50,16 +54,8 @@
       font-size: $fz-md;
       max-width: 550px;
 
-      #para-1 {
-        color: $orange;
-      }
-      
-      #para-2 {
-        color: $purple;
-      }
-  
-      #para-3 {
-        color: $blue;
+      #para-1, #para-2, #para-3 {
+        color: $light-blue;
       }
     }
   }
