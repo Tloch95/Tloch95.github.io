@@ -1,13 +1,9 @@
 #about {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @include respond(phone) {
-    min-height: 100vh;
-    height: auto;
-  }
+  min-height: 100vh;
+  height: auto;
 
   .grid-container {
     display: grid;
