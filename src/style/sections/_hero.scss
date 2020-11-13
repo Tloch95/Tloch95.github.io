@@ -18,7 +18,7 @@
 
   #hero-hello {
     font-size: clamp(20px, 5.5vw, 40px);
-    color: $green;
+    color: $neon-green;
     text-align: left;
 
     @include respond(tab-port) {
@@ -28,7 +28,7 @@
 
   #hero-greeting, #subtitle {
     font-size: clamp(20px, 5.5vw, 40px);
-    color: $green;
+    color: $neon-green;
     text-align: left;
 
     @include respond(tab-port) {

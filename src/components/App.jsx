@@ -14,30 +14,32 @@ import Projects from "./Projects/Projects"
 
 import MediaQuery from 'react-responsive'
 
-import { heroData, aboutData, projectsData, contactData, footerData, headData } from '../data/data';
+import { aboutData, contactData, experienceData, footerData, headData, heroData, projectsData } from '../data/data';
 
 function App() {
+  const [about, setAbout] = useState({});
+  const [contact, setContact] = useState({});
+  const [experience, setExperience] = useState({});
+  const [footer, setFooter] = useState({});
   const [head, setHead] =  useState({});
   const [hero, setHero] = useState({});
-  const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
-  const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
 
   useEffect(() => {
+    setAbout({ ...aboutData });
+    setContact({ ...contactData });
+    setExperience({ ...experienceData });
+    setFooter({ ...footerData });
     setHead({...headData});
     setHero({ ...heroData });
-    setAbout({ ...aboutData });
     setProjects([...projectsData]);
-    setContact({ ...contactData });
-    setFooter({ ...footerData });
   }, []);
 
   const [showMenu, setShowMenu] = useState(false);
   let maxMobileWidth = 700;
 
   return (
-    <PortfolioProvider value={{ head, hero, about, projects, contact, footer }}>
+    <PortfolioProvider value={{ about, contact, experience, footer, head, hero, projects }}>
       <MediaQuery minDeviceWidth={maxMobileWidth+1}>
         <Header siteTitle="TL" />
       </MediaQuery>

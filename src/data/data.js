@@ -26,7 +26,44 @@ export const aboutData = {
   paragraphThree: 'As a developer, I appreciate many things coding-oriented. However, I am especially interested in JavaScript frameworks \
                   (such as ReactJS) as well as Python. I\'ve created this portfolio in React, as well as one of my personal projects, \
                   which you can view below.',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://www.resumemaker.online/es.php',
+};
+
+// EXPERIENCE DATA
+export const experienceData = {
+  jobs: [
+    {
+      position: 'Student Developer',
+      company: 'University of Arizona, Eller IT',
+      responsibilities: [
+        'Manage and maintain integration of relational databases', 
+        'Collaborate with colleagues to facilitate code advancement process',
+        'Debug current/past code using Visual Studio, SQL Management Studio, and more',
+        'Demonstrate best coding practices and ability to produce efficient and maintainable code',
+        'Create user-friendly graphical interfaces for both mobile and web solutions'
+      ]
+    },
+    {
+      position: 'Business Systems Integration Specialist',
+      company: 'University of Arizona, Eller IT',
+      responsibilities: [
+        'Prepare integration plans for SQL and Oracle databases', 
+        'Properly and seamlessly integrate data from external sources',
+        'Transform and manipulate data to be processed using C#',
+        'Create well-functioning programs using MVC, Entity Framework, and more'
+      ]
+    },
+    {
+      position: 'Senior Integration Engineer',
+      company: 'University of Arizona, UITS',
+      responsibilities: [
+        'Collaborate with team members to identify data needs and prepare solution plans', 
+        'Develop integration plans for both internal and external disparate systems',
+        'Manage and maintain performance of internal data systems using AWS tools and more',
+        'Create and maintain real-time solution(s) for data synchronization between systems'
+      ]
+    }
+  ]
 };
 
 // PROJECTS DATA

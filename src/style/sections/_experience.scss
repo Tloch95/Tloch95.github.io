@@ -1,0 +1,51 @@
+#experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: auto;
+
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    margin: 2vh 2vw;
+
+    @include respond(tab-port) {
+      justify-items: center;
+    }
+
+    .experience-header {
+      height: 100%;
+
+      @include respond(tab-port) {
+        grid-column: span 1;
+      }
+    }
+
+    .job {
+      color: $white;
+
+      .job-heading {
+        font-size: clamp(12px, 2vw, 20px);
+
+        .job-position {
+          color: $purple;
+        }
+
+        .job-at {
+          color: $orange;
+        }
+
+        .job-company {
+          color: $green;
+        }
+      }
+
+      .responsibility {
+        font-size: clamp(10px, 1.7vw, 16px);
+        text-align: left;
+        color: $white;
+      }
+    }
+  }
+}
