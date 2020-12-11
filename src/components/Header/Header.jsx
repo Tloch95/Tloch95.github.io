@@ -18,7 +18,7 @@ function Header() {
           <FontAwesomeIcon icon={faInfoCircle} />{" "}
           <span>About</span>
         </Link>
-        <Link to="/">
+        <Link to="#experience">
           <FontAwesomeIcon icon={faBriefcase} />{" "}
           <span>Experience</span>
         </Link>

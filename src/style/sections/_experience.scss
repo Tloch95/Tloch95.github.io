@@ -8,7 +8,7 @@
   .grid-container {
     display: grid;
     justify-content: center;
-    margin: 2vh 2vw;
+    margin: 10vh 2vw;
 
     @include respond(tab-port) {
       justify-items: center;
