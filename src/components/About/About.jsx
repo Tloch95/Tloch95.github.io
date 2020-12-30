@@ -17,8 +17,8 @@ function About() {
     query {
       avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "thomas-lochner-headshot.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
           }
         }
       }

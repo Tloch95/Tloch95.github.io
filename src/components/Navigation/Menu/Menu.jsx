@@ -24,7 +24,7 @@ function Menu({ showMenu, setShowMenu, ...props }) {
             <FontAwesomeIcon icon={faBriefcase} />{" "}
             <span>Experience</span>
           </Link>
-          <Link to="/">
+          <Link to="#projects">
             <FontAwesomeIcon icon={faCodeBranch} />{" "}
             <span>Projects</span>
           </Link>

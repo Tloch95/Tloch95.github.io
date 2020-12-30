@@ -54,15 +54,6 @@ function Experience() {
             })
           }
         </Timeline>
-        {/* <ul style={{padding: 0}}>
-          {jobs && 
-            jobs.map((job) => {
-              return (
-                <li className="job-tab" key={job.toString()}>{job.company}</li>
-              );
-            })
-          }
-        </ul>*/}
       </div>
     </section>
   )

@@ -70,30 +70,23 @@ export const experienceData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'spectaskular.PNG',
+    title: 'Spectaskular',
+    desc: 'A simple task management app to keep track of your life. Built using a Flask/Postgres backend deployed with Heroku, and a ReactJS frontend deployed with Netlify.',
+    desc2: '',
+    url: 'https://spectaskular.netlify.app/',
+    repo: 'https://gitlab.com/tloch95/spectaskular-ui',
+    repo2: 'https://gitlab.com/tloch95/spectaskular-api',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'thomaslochnerdotus.PNG',
+    title: 'thomaslochner.us',
+    desc: '',
+    desc2: '',
+    url: 'https://www.thomaslochner.us/',
+    repo: 'https://github.com/Tloch95/thomaslochner.us',
+    repo2: '',
   },
 ];
 
