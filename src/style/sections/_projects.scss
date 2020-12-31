@@ -30,6 +30,12 @@
         display: grid;
         // grid-column: 1 / 7;
         align-items: center;
+
+        .project-info {
+          background-color: $light-grey;
+          padding: 2vh;
+          border-radius: 1%;
+        }
         
         .project-title {
           font-size: $fz-xxl;
