@@ -13,7 +13,7 @@ const ProjectImage = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1366) {
+                fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
