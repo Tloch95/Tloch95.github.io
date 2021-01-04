@@ -41,7 +41,7 @@ function App() {
   return (
     <PortfolioProvider value={{ about, contact, experience, footer, head, hero, projects }}>
       <MediaQuery minDeviceWidth={maxMobileWidth+1}>
-        <Header siteTitle="TL" />
+        <Header/>
       </MediaQuery>
       <MediaQuery maxDeviceWidth={maxMobileWidth}>
         <MenuMask showMenu={showMenu} setShowMenu={setShowMenu}/>

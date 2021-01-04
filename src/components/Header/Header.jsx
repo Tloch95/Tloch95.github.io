@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useContext } from "react";
 import PortfolioContext from '../../context/context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,14 +32,6 @@ function Header() {
       </div>
     </header>
   );
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header
